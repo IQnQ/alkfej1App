@@ -1,28 +1,28 @@
-# HelloFX Sample
 
-JavaFX 13 HelloFX sample to run with different options and build tools.
+# alkfej1App
 
-Download [JDK 11 or later](http://jdk.java.net/) for your operating system.
-Make sure `JAVA_HOME` is properly set to the JDK installation directory. 
-
-## Maven
-
-### Linux / Mac
-
-If you run on Linux or Mac, follow these steps:
-
-    cd HelloFX/Maven/hellofx
+Asztali alkalmazás funkciói:
+  - Kérdés kezelése
+  - Kérdésnek van egy leírása (kérdés)
+  - Kérdéshez tartozhat kép (opcionális)
+  - Válasz típusok
+    - egyszerű szöveges válasz
+    - több válaszlehetőség közül egyet lehet kiválasztani
+    - több válaszlehetőség közül többet lehet kiválasztani
+    - dátumot lehet megadni
+    - Egész számot lehet megadni
+  - Kérdéssor összeállítása során
+    - Egy vagy több kérdést lehet megadni
+    - Kérdéssornak van kitöltési intervalluma, amikor kitölthető
+    - Maximális kitöltési idő
+    - Kérdéssort csak a létrehozó szerkeszthet
+    - Hányszor lehet kitölteni.
+    - Link, hogy a kérdéssor hol érhető el
+  - Kérdéssor listázás
+    - Szűrési lehetőség: lejárt, aktuális, jövőbeni, kitöltött
+    - Csak a kérdéssor feltételei által megjeleníthető kérdéssorokat kell megjeleníteni.
+  - Az adatokat adatbázisba kell tárolni
+  - Eredmények megtekintése
+    - Eredményeket csv formátumba ki tudja menteni.
     
-To compile and run the project:
-    
-    mvn clean javafx:run
-
-### Windows
-
-If you run on Windows, follow these steps:
-
-    cd HelloFX\Maven\hellofx
-
-To run the project:
-    
-    mvn clean javafx:run
+  Rajki Zsombor Milán - VS92AH
