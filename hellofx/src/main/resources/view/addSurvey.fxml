@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddSurveyViewController">
+   <children>
+      <Label layoutX="15.0" layoutY="15.0" text="New Survey" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="14.0" layoutY="104.0" prefHeight="146.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="41.0" text="ID" />
+          <TableColumn fx:id="qCol" prefWidth="265.0" text="Question" />
+            <TableColumn fx:id="typeCol" minWidth="0.0" prefWidth="65.0" text="type" />
+        </columns>
+      </TableView>
+
+      <Button layoutX="292.0" layoutY="480.0" mnemonicParsing="false" onAction="#saveSurvey" prefHeight="27.0" prefWidth="94.0" text="Save" />
+
+      <Button layoutX="242.0" layoutY="54.0" mnemonicParsing="false" onAction="#addQuestionBtn" text="Add question" />
+      <TextField fx:id="fromTime" layoutX="200.0" layoutY="311.0" prefWidth="161.0" promptText="Time ( ex 15:15 )" />
+      <ComboBox fx:id="typeBox" layoutX="14.0" layoutY="54.0" prefWidth="212.0" promptText="Choose type" />
+      <TextField fx:id="nameText" layoutX="212.0" layoutY="15.0" promptText="ExampleSurvey" />
+      <Label layoutX="15.0" layoutY="259.0" prefHeight="26.0" prefWidth="161.0" text="Allow completion during:" />
+      <DatePicker fx:id="fromPicker" layoutX="15.0" layoutY="311.0" prefWidth="161.0" promptText="Date" />
+      <Label layoutX="15.0" layoutY="290.0" text="From" />
+      <Label layoutX="15.0" layoutY="345.0" text="To" />
+       <TextField fx:id="toTime" layoutX="200.0" layoutY="365.0" prefWidth="161.0" promptText="Time ( ex 15:15 )" />
+       <DatePicker fx:id="toPicker" layoutX="15.0" layoutY="365.0" prefWidth="161.0" promptText="Date" />
+       <Label layoutX="15.0" layoutY="405.0" text="Max completion time" />
+       <Label layoutX="200.0" layoutY="405.0" text="Survey start limit count" />
+      <TextField fx:id="maxTime" layoutX="15.0" layoutY="425.0" prefWidth="161.0" promptText="Time ( ex 15:15 )" />
+      <TextField fx:id="limitCount" layoutX="200.0" layoutY="425.0" prefWidth="161.0" promptText="Count ( min 1 )" />
+   </children>
+</AnchorPane>

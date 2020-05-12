@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainViewController">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="100.0" prefHeight="276.0" prefWidth="962.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="44.00001525878906" text="ID" />
+          <TableColumn fx:id="questionCol" prefWidth="212.0" text="Name" />
+          <TableColumn fx:id="filledOutCol" minWidth="0.0" prefWidth="55.0" text="Filled" />
+            <TableColumn fx:id="actionCol" prefWidth="130.0" text="Action" />
+            <TableColumn fx:id="fromCol" prefWidth="128.0" text="From" />
+            <TableColumn fx:id="toCol" prefWidth="122.0" text="To" />
+            <TableColumn fx:id="maxCol" prefWidth="72.0" text="Time limit" />
+            <TableColumn fx:id="limitCol" prefWidth="61.0" text="Start limit" />
+        </columns>
+      </TableView>
+      <Label layoutX="335.0" layoutY="7.0" prefHeight="42.0" prefWidth="139.0" text="Survey">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="14.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Add">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addSimpleSurvey" text="New survey" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#filterExpired" text="Show expired" />
+                  <MenuItem mnemonicParsing="false" onAction="#filterFuture" text="Show planned" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAll" text="Show all" />
+                  <MenuItem mnemonicParsing="false" onAction="#filterFilled" text="Show filled" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

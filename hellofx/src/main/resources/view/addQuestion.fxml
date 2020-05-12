@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddQuestionViewController">
+   <children>
+      <Label layoutX="28.0" layoutY="14.0" text="New question">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="questionTextArea" layoutX="14.0" layoutY="54.0" prefHeight="46.0" prefWidth="280.0" promptText="Type your question here" />
+      <ImageView fitHeight="59.0" fitWidth="43.0" layoutX="330.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/pngwave.png" />
+         </image>
+      </ImageView>
+      <Button disable="true" layoutX="321.0" layoutY="132.0" mnemonicParsing="false" text="Upload" />
+      <CheckBox fx:id="cb3" layoutX="19.0" layoutY="214.0" mnemonicParsing="false" visible="false" />
+      <CheckBox fx:id="cb4" layoutX="19.0" layoutY="242.0" mnemonicParsing="false" visible="false" />
+      <CheckBox fx:id="cb5" layoutX="19.0" layoutY="270.0" mnemonicParsing="false" visible="false" />
+      <CheckBox fx:id="cb2" layoutX="19.0" layoutY="187.0" mnemonicParsing="false" visible="false" />
+      <CheckBox fx:id="cb1" layoutX="19.0" layoutY="159.0" mnemonicParsing="false" visible="false" />
+      <TextField fx:id="tf1" layoutX="59.0" layoutY="154.0" promptText="Option 1" visible="false" />
+      <TextField fx:id="tf2" layoutX="59.0" layoutY="182.0" promptText="Option 2" visible="false" />
+      <TextField fx:id="tf3" layoutX="59.0" layoutY="209.0" promptText="Option 3" visible="false" />
+      <TextField fx:id="tf4" layoutX="59.0" layoutY="237.0" promptText="Option 4" visible="false" />
+      <TextField fx:id="tf5" layoutX="59.0" layoutY="265.0" promptText="Option 5" visible="false" />
+      <RadioButton fx:id="rb1" layoutX="19.0" layoutY="159.0" mnemonicParsing="false" selected="true" visible="false" />
+      <RadioButton fx:id="rb2" layoutX="19.0" layoutY="187.0" mnemonicParsing="false" visible="false" />
+      <RadioButton fx:id="rb3" layoutX="19.0" layoutY="214.0" mnemonicParsing="false" visible="false" />
+      <RadioButton fx:id="rb4" layoutX="19.0" layoutY="242.0" mnemonicParsing="false" visible="false" />
+      <RadioButton fx:id="rb5" layoutX="19.0" layoutY="270.0" mnemonicParsing="false" visible="false" />
+      <Button layoutX="284.0" layoutY="342.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="93.0" text="Save" />
+      <TextField fx:id="answerField" layoutX="19.0" layoutY="119.0" prefHeight="27.0" prefWidth="270.0" promptText="Type the answer herer" />
+   </children>
+</AnchorPane>
